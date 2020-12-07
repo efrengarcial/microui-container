@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.segurosbolivar.demo",
   "appName": "microui",
   "bundledWebRuntime": false,
   "npmClient": "npm",

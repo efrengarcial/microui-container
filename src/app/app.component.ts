@@ -10,12 +10,15 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+  title = 'parent';
+  data: any = 'something from parent xxxxxx!';
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
   ) {
-    this.initializeApp();
+    //this.initializeApp();
   }
 
   initializeApp() {
@@ -23,5 +26,9 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+  }
+
+  getDataBack($event: string) {
+    console.log($event);
   }
 }
